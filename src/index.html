@@ -3,33 +3,560 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Bootstrap Sass Boilerplate</title>
-    <meta name="Description" CONTENT="A Bootstrap 4.3.1 boilerplate with sass, gulp 4 tasks, browserSync">
+    <title>Anthony Rivera | HTML Portfolio</title>
+    <meta name="Description" CONTENT="Web Portfolio of Anthony Rivera in HTML/Bootstrap Saas">
     <meta name="author" content="blue0knight" />
     <meta name="robots" content="all,follow" />
-    <meta name="creation_Date" content="04/01/2019" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="creation_Date" content="05/22/2019" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
     <!-- Icons for this template -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <!-- Stylesheet -->
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-    <!-- Bootstrap -->
+    <link rel="icon" href="/images/favicon.ico" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Rock+Salt" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Main Styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Stylesheet -->
     <link href="css/styles.min.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="150">
 
-<h1>Bootstrap Sass Boilerplate</h1>
+    <div class="container-fluid icon-top px-2 py-3">
+        <div class="row">
+            <div class="col d-flex justify-content-around align-items-baseline">
+                <div class="top-icons">
+                    <a href="https://bit.ly/2CSPyEI" class="mx-2"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+                    <a href="https://bit.ly/2CQiM7b"><i class="fab fa-github-alt" aria-hidden="true"></i></a>
+                </div>
+                <h4 class="email-header">Email: <a href="mailto:anthony@ranthonyrivera.com" class="email">anthony@ranthonyrivera.com</a></h4>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+            <nav id="navbar" class="navbar navbar-expand-lg">
+<!--             <a href="https://ranthonyrivera.com" class="navbar-brand px-2 py-0">
+                <img src="/assets/img/ranthonyrivera-logo.png" class="logo" alt="ranthony-logo">
+            </a> -->
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a data-scroll href="#header" class="nav-link m-2 active">Home</a></li>
+                    <li class="nav-item "><a data-scroll href="#about-me" class="nav-link m-2">About Me</a></li>
+                    <li class="nav-item"><a data-scroll href="#projects" class="nav-link m-2">Projects</a></li>
+                    <li class="nav-item"><a data-scroll href="#skills" class="nav-link m-2">Skills</a></li>
+                    <li class="nav-item"><a data-scroll href="#contact" class="nav-link m-2">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    <header id="header">
+
+        <section id="hero">
+            <div class="row">
+                <div id="cloud" class="d-none d-md-block">
+                    <img src="images/cloud.png">
+                </div>
+                <div id="sailboat" class="d-none d-md-block">
+                    <img src="images/sailboat.png">
+                </div>
+                <div class="offset-md-6 col-md-5 hero-description">
+                    <h4 class="text-uppercase text-center my-4">welcome to my site</h4>
+                    <p>This site tries to capture the vibrant colors of Miami. The fun and funky color palettes used are inspired by the colors of South Beach and the colorful lights you see along Deco Drive at night.</p>
+                    <p>The source code can be found on my GitHub Repo.</p>
+                    <button class="btn wp-btn my-2 text-center text-capitalize"><a href="http://bit.ly/2VTV5Xm" target="_blank">view the code on github</a></button>
+                </div>
+            </div>
+        </section>
+
+    </header>
+  
+    <!-- end of header -->
+    <div id="guy" class="d-none d-md-block">
+    </div>
+    <section id="about-me">
+      <div class="container">
+         <div class="row d-flex justify-content-center">
+            <div class="col-md-5 about-description align-self-center">
+                <h3 class="text-center text-uppercase">About Me</h3>
+                <p>I am a freelance web developer. I Love to Code. I Code to Learn. I Learn to Build. I create responsive newsletters, emails, and websites. I am currently managing and developing several eCommerce websites powered by WordPress with WooCommerce, Shopify, and Magento 2.</p>
+            </div>
+            <div class="col-md-6 about-me-image d-flex justify-content-center">
+               <img src="images/babyHulkAnthony.png" alt="babyHulkAnthony" class="img-fluid d-none d-md-block"> 
+            </div>
+        </div>            
+      </div>
+         
+    
+    </section>
+    <section id="projects">
+        <h3 class="text-center text-uppercase section-head">Sample Work</h3> 
+        <p class="text-center section-text">some of the stuff i just did</p>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center project-buttons">
+                     <div class="btn-group button-group filter-button-group pb-5" role="group">
+                        <button type="button" class="btn-projects text-uppercase" data-filter="*">all</button>
+                        <button type="button" class="btn-projects text-uppercase" data-filter=".graphics">graphics</button>
+                        <button type="button" class="btn-projects text-uppercase" data-filter=".html">html/css/js</button>
+                        <button type="button" class="btn-projects text-uppercase" data-filter=".cms">cms/aws</button>
+                    </div>  
+                 </div><!-- end of col text-center -->                    
+            </div><!-- end of row -->
+            <div class="row grid projects">
+                 <div class="col-sm-6 col-md-4 my-2 graphics">
+                    <article class="img-container">
+                        <img src="images/Turmeric.jpg" alt="turmeric flyer" class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-turmeric">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                    <!-- Modal -->
+                        <div class="modal fade" id="project-link-turmeric" tabindex="-1" role="dialog" aria-labelledby="project-link-turmeric" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">Turmeric Curcumin with Bioprene Flyer</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Promotional Flyer - A flyer promoting Turmeric Curcumin with Bioprene created using Photoshop CC 2018. Colors used are in line with the product's brand. Images and layout communicates to the target audience. Product image was taken using a Nikon D610. You can view the high quality image by clicking on the "View Project" button below.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="Turmeric.html" target="_blank">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->  
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 html">
+                    <article class="img-container">
+                        <img src="images/mazdaNewsletter.jpg" alt="mazda newsletter" class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-mazda">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                    <!-- Modal -->
+                        <div class="modal fade" id="project-link-mazda" tabindex="-1" role="dialog" aria-labelledby="project-link-mazda" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">Mazda Responsive Newsletter</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Responsive Email Newsletter - A sample responsive newsletter I designed and coded using Foundation 2 for Emails.  Colors, fonts, images, logo, and live links (at the time of production) used were taken from Mazda's website. All images, logo used are property of Mazda. A animated .gif image of the subject was used to add visualization and catch attention. Click on the "View Project" button to check the code and test on Litmus.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="https://litmus.com/builder/8154589" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->  
+
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 cms">
+                    <article class="img-container">
+                        <img src="images/drRentalCars.jpg" alt="dr rental cars" class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-drrentalcars">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                    <!-- Modal -->
+                        <div class="modal fade" id="project-link-drrentalcars" tabindex="-1" role="dialog" aria-labelledby="project-link-drrentalcars" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">DR Rental Cars</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Car Rental Website - A responsive website built using WordPress that offers a wide variety of options including a booking system and a very fast filtering system that allows instant search. Click on the "View Project" button to visit DR Rental Cars</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="https://drrentalcars.com" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 html">
+                    <article class="img-container">
+                        <img src="images/browardProcessServers.jpg"  class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-bps">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                    <!-- Modal -->
+                        <div class="modal fade" id="project-link-bps" tabindex="-1" role="dialog" aria-labelledby="project-link-bps" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">BROWARD PROCESS SERVERS</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Process Server Website - A professional mobile-friendly website created using Bootstrap 4 that features parralax smooth scrolling, carousel, and gradient color backgrounds that smoothly transition to different color tones as you scroll up or down. It has an emebedded testimonial video, and a paypal widget that accepts payments online. Click the "View Project" button to visit the live site.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="https://browardprocessservers.com" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->                    
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 cms">
+                    <article class="img-container">
+                        <img src="images/awsPoly.jpg"  class="img-fluid img-thumbnail rounded project-image" alt="aws poly">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-aws">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                     <!-- Modal -->
+                        <div class="modal fade" id="project-link-aws" tabindex="-1" role="dialog" aria-labelledby="project-link-bps" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">AWS Poly Website</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>AWS Poly on S3 - This site will create text notes that will be converted into audio/lifelike speech files using the Amazon Polly service.The converted audio files can then be retrieved, downloaded, or played later.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="https://s3.amazonaws.com/arivera0625-polyweb/index.html" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->                    
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 graphics">
+                    <article class="img-container">
+                        <img src="images/glowGirlLabs.jpg" alt="Glow Girl Labs Flyer" class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-glowgirl">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                     <!-- Modal -->
+                        <div class="modal fade" id="project-link-glowgirl" tabindex="-1" role="dialog" aria-labelledby="project-link-glowgirl" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">Glow Girl Flyer</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Promotional Flyer - A flyer promoting Ultra Swiss Apple Stem Cell Serum created using Photoshop CC 2018. Colors used are in line with the product's brand. Images and layout communicates to the target audience. Product image was taken using a Nikon D610. You can view the high quality image by clicking on the "View Project" button below.</p></p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="GlowGirl.html" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->                       
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 graphics">
+                    <article class="img-container">
+                        <img src="images/wireframePortfolioSite.jpg" class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-wireframe">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                     <!-- Modal -->
+                        <div class="modal fade" id="project-link-wireframe" tabindex="-1" role="dialog" aria-labelledby="project-link-wireframe" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">Wireframe of Portfolio Site</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Portfolio Site Wireframe - This site has been created from scratch, from wireframe using Photoshop CC to Bootstrap 4 with Saas, and uses technologies like Parallax Smooth Scroll, CSS Animation, jQuery, and Isotope JS for the "Projects Section". The wireframe seen here outlines the colors, fonts, and basic layout I had in mind when I created and coded the site. The site is still a work in progress. I have hidden the "Blog Section" and will finish working on it when I have the time to write something. You can the wireframe I used for my guide by clicking on the "View Project" button below.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="Wireframe.html" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->                    
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 cms">
+                    <article class="img-container">
+                        <img src="images/bronzanTan.jpg" alt="bronzantan" class="img-fluid img-thumbnail rounded project-image">
+                        <a  class="search-link" data-toggle="modal" data-target="#project-link-bronzantan">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                      <!-- Modal -->
+                        <div class="modal fade" id="project-link-bronzantan" tabindex="-1" role="dialog" aria-labelledby="project-link-bronzantan" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">Bronzan Tan Store</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>eCommerce Store - A responsive eCommerce store selling Bronzan Tanning Pills. Colors, fonts, and images used are in line with the product's brand. Images and layout communicates to the target audience. Click the "View Project" button to visit the live site</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="https://bronzantan.com" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->                    
+                 </div>
+                 <div class="col-sm-6 col-md-4 my-2 html">
+                    <article class="img-container">
+                        <img src="images/autoNationNewsletter.jpg" alt="auto nation newsletter" class="img-fluid img-thumbnail rounded project-image">
+                        <a class="search-link" data-toggle="modal" data-target="#project-link-autonation">
+                            <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
+                    </article>
+                     <!-- Modal -->
+                        <div class="modal fade" id="project-link-autonation" tabindex="-1" role="dialog" aria-labelledby="project-link-autonation" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="project-title">AutoNation Newsletter</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Responsive Email Newsletter - A sample responsive newsletter I designed and coded using Foundation 2 for Emails.  Colors, fonts, images, logo, and live links (at the time of production) used were taken from AutoNation's website. All images, logo used are property of AutoNation. Click the "View Project" button to check the code and test on Litmus.</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-project text-capitalize"><a href="https://litmus.com/builder/20c2125" target="_blank" ">view project</a></button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <! end of Modal -->                     
+            </div>
+
+            <div class="row d-flex justify-content-center my-5 current-project">
+                <div class="col-md-5 project-description align-self-center text-center">
+                    <h3 class="py-3">Current Projects</h3>
+                    <p class="text-left lead-light">Here are some of the projects I am handling and are still under development.<br/> Toyz4Me.com is a site I am building running on WordPress with WooCommerce and AliDropship Woo plugin. It grabs product data from AliExpress and posts it on the site.<br/>LongevityResearchProducts.com is a site running on Shopify and is currently in sync with various sales channels like eBay, Amazon, Bonanza, and Sears.<br/>eMarketplaceUSA is still under development and is using Magento 2 framework and is hosted on AWS. It has a multi-vendor module, Shopify Integration, and will let users create vendor accounts.</p>
+                </div>
+                <div class="col-md-6 current-project-photos my-5">
+                    <a href="https://toyz4me.com" target="blank">
+                        <img src="images/toyz4Me.jpg" alt="Toyz4Me" title="Toyz4Me.com" class="img-thumbnail current-project-1" >
+                    </a>
+                    <a href="https://longevityresearchprodcuts.com" target="_blank">
+                        <img src="/images/longevityResearchProducts.jpg" alt="Longevity Research Products" title="LongevityResearchProducts.com" class="img-thumbnail current-project-2">   
+                    </a>
+                    <a href="https://emarketplaceusa.com" target="_blank">
+                       <img src="images/emarketplaceUsa.jpg" alt="eMarketplace USA" title="eMarketplaceUSA.com" class="img-thumbnail current-project-3"> 
+                    </a>
+                    
+              </div>
+            </div>
+        </div> <!-- end of container -->
+        </div><!-- particle js -->
+    </section>
+    <section id="skills">
+
+        <h3 class="text-center text-uppercase section-head">My Skills</h3> 
+        <p class="text-center section-text">Some of the technologies I use and work with</p>
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item col-12 mt-3 active">
+              <img class="d-block w-80 mx-auto" src="images/aws.png" alt="AWS">
+            </div>
+            <div class="carousel-item col-12 mt-3">
+              <img class="d-block w-80 mx-auto" src="images/bootstrap.png" alt="Bootstrap">
+            </div>
+            <div class="carousel-item col-12 mt-3">
+              <img class="d-block w-80 mx-auto" src="images/css.png" alt="CSS">
+            </div>
+            <div class="carousel-item col-12 mt-3">
+              <img class="d-block w-80 mx-auto" src="images/html.png" alt="HTML">
+            </div>
+            <div class="carousel-item col-12 mt-3">
+              <img class="d-block w-80 mx-auto" src="images/js.png" alt="JS">
+            </div>
+            <div class="carousel-item col-12 mt-3">
+              <img class="d-block w-80 mx-auto" src="images/mailchimp.png" alt="Mailchimp">
+            </div>
+          </div>
+
+        </div>
+        
+    </section>
+
+<!-- Hide Blog Section
+    <section id="blog">
+        <h3 class="text-center text-uppercase section-head">Latest Posts</h3> 
+        <p class="text-center section-text">some of the stuff i wrote</p> 
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 my-3 posts post-1">
+                    <div class="card">
+                        <p class="corner-text">new</p>
+                      <img src="https://source.unsplash.com/random/280x180" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <hr class="mb-0">
+                        <div class="card-footer">
+                            <button class="btn btn-post"><a href="#" class="text-capitalize post-link">read more...</a></button>
+                        </div>
+                      </div>                      
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3 posts">
+                    <div class="card">
+                        <p class="corner-text">new</p>
+                      <img src="https://source.unsplash.com/random/280x180" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <hr class="mb-0">
+                        <div class="card-footer">
+                            <button class="btn btn-post"><a href="#" class="text-capitalize post-link">read more...</a></button>
+                       </div>
+                      </div>                      
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 my-3 posts post-3">
+                    <div class="card">
+                        <p class="corner-text">new</p>
+                      <img src="https://source.unsplash.com/random/280x180" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <hr class="mb-0">
+                        <div class="card-footer d-flex">
+                            <button class="btn btn-post"><a href="#" class="text-capitalize post-link">read more...</a></button>
+                        </div>
+                      </div>                      
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </section>
+ End of Hide Blog Section --> 
+
+
+    <section id="contact">
+        <h3 class="text-center text-uppercase section-head">Contact Me</h3> 
+        <p class="text-center section-text">get in touch</p> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 mx-auto my-5" id="form">
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+                      <div class="row mt-5">
+                        <div class="col-md-6">
+                              <div class="form-group">
+                                <label for="form_firstname">First Name*</label>
+                                <input id="firstname" type="text" name="name" class="form-control" placeholder="Enter First Name*" required="required" data-error="Firstname is required">
+                                <div class="help-block with-errors"></div>  
+                              </div>  
+                          
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                               <label for="form_emai">Email*</label>
+                               <input id="email" type="email" name="email" class="form-control" placeholder="Pls Enter Email*" required="required" data-error="Email is required">
+                                <div class="help-block with-errors"></div> 
+                            </div>
+                          
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                          <div class="col-12">
+                            <div class="form-group">
+                              <label for="form_message">Message *</label>
+                              <textarea id="form_message" name="message" rows="4" class="form-control" placeholder="Message For Me*" required="required" data-error="Message is required*"></textarea>
+                              <div class="help-block with-errors"></div>
+                            </div>
+                          </div>
+                          <div class="col-md-12">
+                              <input type="submit" class="btn btn-contact" value="Send message">
+                          </div>
+                      </div><!-- row mt-3 mb-5 -->
+                      <div class="row mt-2 mb-5">
+                          <div class="col-md-12">
+                              <p class="text-muted">
+                                  <strong>*</strong> These fields are required.
+                              </p>
+                              <div class="g-recaptcha" data-sitekey="6Le1F6AUAAAAAHFOQ_CjJLtaA3wILPhGSu6ESx7l"></div>
+                          </div>
+                      </div>        
+                    </form>
+                </div>
+            </div>
+        </div> 
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <a href="http://ranthonyrivera.com/Personal_Resume.html" target"_blank">
+                    <i class="fa fa-cloud-download text-center" aria-hidden="true"></i> 
+                    </a>
+                </div> 
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn-resume">
+                    <a href="http://ranthonyrivera.com/Personal_Resume.html" target="_blank">Download Resume</a>
+                    </button>
+                </div>
+                <div class="col-12 contact-text">
+                    <p class="text-center mx-auto my-5">Thanks a lot for taking the time to visit my site and viewing my work.</p>
+                </div>
+                <div class="col-12 contact-text">
+                    <p class="text-center mx-auto copyright">© 2019 r. anthony rivera. All Rights Reserved</p>      
+                </div>
+            </div>
+ 
+    </section>
+
+
+
+
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<!-- 3rd party cdn scripts for images-->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<!-- cdn of isotope js -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 <!-- build:js -->
 <script src="js/main.js"></script>
 <!-- endbuild -->

@@ -50,7 +50,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a data-scroll href="#header" class="nav-link m-2 active">Home</a></li>
                     <li class="nav-item "><a data-scroll href="#about-me" class="nav-link m-2">About Me</a></li>
-                    <li class="nav-item"><a data-scroll href="#projects" class="nav-link m-2">Projects</a></li>
+                    <li class="nav-item"><a data-scroll href="#recent-projects" class="nav-link m-2">Projects</a></li>
                     <li class="nav-item"><a data-scroll href="#skills" class="nav-link m-2">Skills</a></li>
                     <li class="nav-item"><a data-scroll href="#contact" class="nav-link m-2">Contact</a></li>
                 </ul>
@@ -95,21 +95,24 @@
          
     
     </section>
-    <section id="projects">
+    <section id="recent-projects">
         <h3 class="text-center text-uppercase section-head">Sample Work</h3> 
         <p class="text-center section-text">some of the stuff i just did</p>
         <div class="container">
             <div class="row">
                 <div class="col text-center project-buttons">
                      <div class="btn-group button-group filter-button-group pb-5" role="group">
-                        <button type="button" class="btn-projects text-uppercase" data-filter="*">all</button>
+                        <button type="button" class="btn-projects text-uppercase is-checked" data-filter="*">all</button>
                         <button type="button" class="btn-projects text-uppercase" data-filter=".graphics">graphics</button>
                         <button type="button" class="btn-projects text-uppercase" data-filter=".html">html/css/js</button>
                         <button type="button" class="btn-projects text-uppercase" data-filter=".cms">cms/aws</button>
                     </div>  
                  </div><!-- end of col text-center -->                    
             </div><!-- end of row -->
+
+            <!-- start of row grid projects -->
             <div class="row grid projects">
+
                  <div class="col-sm-6 col-md-4 my-2 graphics">
                     <article class="img-container">
                         <img src="images/Turmeric.jpg" alt="turmeric flyer" class="img-fluid img-thumbnail rounded project-image">
@@ -137,14 +140,15 @@
                           </div>
                         </div>
                       <! end of Modal -->  
-                 </div>
+                 </div><!-- end of graphics -->
+
                  <div class="col-sm-6 col-md-4 my-2 html">
                     <article class="img-container">
                         <img src="images/mazdaNewsletter.jpg" alt="mazda newsletter" class="img-fluid img-thumbnail rounded project-image">
                         <a class="search-link" data-toggle="modal" data-target="#project-link-mazda">
                             <i class="fa fa-search" aria-hidden="true"></i><p class="project-link text-capitalize text-center">click to learn more</p></a>
                     </article>
-                    <!-- Modal -->
+                    <!-- Modal -->                   
                         <div class="modal fade" id="project-link-mazda" tabindex="-1" role="dialog" aria-labelledby="project-link-mazda" aria-hidden="true">
                           <div class="modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content">
@@ -153,20 +157,20 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                              </div>
+                              </div><!-- modal-header -->
                               <div class="modal-body">
                                 <p>Responsive Email Newsletter - A sample responsive newsletter I designed and coded using Foundation 2 for Emails.  Colors, fonts, images, logo, and live links (at the time of production) used were taken from Mazda's website. All images, logo used are property of Mazda. A animated .gif image of the subject was used to add visualization and catch attention. Click on the "View Project" button to check the code and test on Litmus.</p>
-                              </div>
+                              </div><!-- modal-body -->
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-project text-capitalize"><a href="https://litmus.com/builder/8154589" target="_blank" ">view project</a></button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                              </div><!-- modal-footer -->
+                            </div><!-- modal-content -->
+                          </div><!-- modal-dialog -->
+                        </div><!-- modal-fade -->
                       <! end of Modal -->  
+                 </div><!-- end of html -->
 
-                 </div>
                  <div class="col-sm-6 col-md-4 my-2 cms">
                     <article class="img-container">
                         <img src="images/drRentalCars.jpg" alt="dr rental cars" class="img-fluid img-thumbnail rounded project-image">
@@ -182,19 +186,20 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                              </div>
+                              </div><!-- modal-header -->
                               <div class="modal-body">
                                 <p>Car Rental Website - A responsive website built using WordPress that offers a wide variety of options including a booking system and a very fast filtering system that allows instant search. Click on the "View Project" button to visit DR Rental Cars</p>
-                              </div>
+                              </div><!-- modal-body -->
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-project text-capitalize"><a href="https://drrentalcars.com" target="_blank" ">view project</a></button>
-                              </div>
-                            </div>
-                          </div>
+                              </div><!-- modal-footer -->
+                            </div><!-- modal- content -->
+                          </div><!-- modal-dialog -->
                         </div>
                       <! end of Modal -->
-                 </div>
+                 </div><!-- end of cms -->
+
                  <div class="col-sm-6 col-md-4 my-2 html">
                     <article class="img-container">
                         <img src="images/browardProcessServers.jpg"  class="img-fluid img-thumbnail rounded project-image">
@@ -210,19 +215,20 @@
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
                                 </button>
-                              </div>
+                              </div><!-- modal-header -->
                               <div class="modal-body">
                                 <p>Process Server Website - A professional mobile-friendly website created using Bootstrap 4 that features parralax smooth scrolling, carousel, and gradient color backgrounds that smoothly transition to different color tones as you scroll up or down. It has an emebedded testimonial video, and a paypal widget that accepts payments online. Click the "View Project" button to visit the live site.</p>
-                              </div>
+                              </div><!-- modal-body -->
                               <div class="modal-footer">
                                 <button type="button" class="btn btn-project" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-project text-capitalize"><a href="https://browardprocessservers.com" target="_blank" ">view project</a></button>
-                              </div>
-                            </div>
-                          </div>
+                              </div><!-- modal-footer -->
+                            </div><!-- modal-content -->
+                          </div><!-- modal-dialog -->
                         </div>
                       <! end of Modal -->                    
                  </div>
+
                  <div class="col-sm-6 col-md-4 my-2 cms">
                     <article class="img-container">
                         <img src="images/awsPoly.jpg"  class="img-fluid img-thumbnail rounded project-image" alt="aws poly">
@@ -362,10 +368,17 @@
                           </div>
                         </div>
                       <! end of Modal -->                     
-            </div>
+                    </div>
 
-            <div class="row d-flex justify-content-center my-5 current-project">
-                <div class="col-md-5 project-description align-self-center text-center">
+        </div> <!-- end of container -->
+    </section>
+
+    <section id="current-projects">
+        <h3 class="text-center text-uppercase section-head">Sample Work</h3> 
+        <p class="text-center section-text">some of the stuff i just did</p>
+        <div class="container">
+                <div class="row d-flex justify-content-center my-5 current-project">
+                <div class="col-md-6 project-description align-self-center text-center">
                     <h3 class="py-3">Current Projects</h3>
                     <p class="text-left lead-light">Here are some of the projects I am handling and are still under development.<br/> Toyz4Me.com is a site I am building running on WordPress with WooCommerce and AliDropship Woo plugin. It grabs product data from AliExpress and posts it on the site.<br/>LongevityResearchProducts.com is a site running on Shopify and is currently in sync with various sales channels like eBay, Amazon, Bonanza, and Sears.<br/>eMarketplaceUSA is still under development and is using Magento 2 framework and is hosted on AWS. It has a multi-vendor module, Shopify Integration, and will let users create vendor accounts.</p>
                 </div>
@@ -377,20 +390,18 @@
                      <a href="https://toyz4me.com" target="blank">
                         <img src="images/toyz4Me.jpg" alt="Toyz4Me" title="Toyz4Me.com" class="img-thumbnail current-project-1" >
                     </a>
-                    <a href="https://longevityresearchprodcuts.com" target="_blank">
+                    <a href="https://longevityresearchproducts.com" target="_blank">
                         <img src="/images/longevityResearchProducts.jpg" alt="Longevity Research Products" title="LongevityResearchProducts.com" class="img-thumbnail current-project-2">   
                     </a>
                     <a href="https://emarketplaceusa.com" target="_blank">
                        <img src="images/emarketplaceUsa.jpg" alt="eMarketplace USA" title="eMarketplaceUSA.com" class="img-thumbnail current-project-3"> 
                     </a>                       
                     </div>
-
-                    
-              </div>
-            </div>
-        </div> <!-- end of container -->
-        </div><!-- particle js -->
+                </div><!-- col-md-6 -->
+            </div><!-- row current-project -->
+        </div><!-- container -->
     </section>
+
     <section id="skills">
 
         <h3 class="text-center text-uppercase section-head">My Skills</h3> 

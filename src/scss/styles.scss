@@ -306,15 +306,22 @@ a {
 }
 
 /* projects section */
-#projects {
+#recent-projects, #current-projects {
   background-color: #a9eba0;
   padding: 150px 50px 50px;
+}
+
+#current-projects {
+  background-color: #a9eba0;
+  padding: 50px 50px 50px;
+
 }
 
 .btn-projects {
   border: 2px solid #a9eba0;
   background-color: rgba(255, 236, 120, 0.9);
   color: #a9eba0;
+  margin: 0 3px;
 }
 
 .btn-projects:hover, .is-checked {

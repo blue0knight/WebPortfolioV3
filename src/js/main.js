@@ -47,14 +47,6 @@ $(document).ready(function () {
       speed: 500
   });
 
-   // $('.nav-item a').click(function(link){
-   //    link.preventDefault();
-   //    let target=$(this).attr('href');
-   //    $('html, body').stop().animate({
-   //       scrollTop:$(target).offset().top
-   //    },1000);
-   // })
-
    // init Isotope
     var $grid = $('.grid').isotope({
       // options
@@ -70,6 +62,14 @@ $(document).ready(function () {
     $grid.imagesLoaded().progress( function() {
       $grid.isotope('layout');
     });
+  
+    // add styling 
+    $('.btn-projects').on('click', function() {
+      $('.btn-projects').removeClass('is-checked');
+      $(this).addClass('is-checked');
+    })
+
+
 
     // skills carousel
 

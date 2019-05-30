@@ -24,6 +24,7 @@
     "popper.js": "^1.15.0"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "node-pre-gyp": "^0.13.0"
   }
 }

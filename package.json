@@ -12,7 +12,6 @@
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "bootstrap": "^4.3.1",
-    "browser-sync": "^2.26.5",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.1",
     "gulp-postcss": "^8.0.0",
@@ -24,7 +23,8 @@
     "popper.js": "^1.15.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
+    "browser-sync": "^2.26.7",
     "node-pre-gyp": "^0.13.0"
   }
 }
